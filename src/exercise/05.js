@@ -42,10 +42,10 @@ const mediumBox = (
 function Box(props) {
   return (
     <div
-      className={`box box--${props.mySize}`}
+      className={`box box--${props.size}`}
       style={{backgroundColor: `${props.myColor}`, fontStyle: 'italic'}}
     >
-      {`${props.mySize} ${props.myColor} box`}
+      {`${props.size} ${props.myColor} box`}
     </div>
   )
 }
@@ -55,7 +55,7 @@ function App() {
     <div>
       {smallBox}
       {mediumBox}
-      <Box mySize="large" myColor="orange" />
+      <Box size="large" myColor="orange" />
     </div>
   )
 }
